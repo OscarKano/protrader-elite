@@ -1,24 +1,51 @@
-<!DOCTYPE html> 
-<html lang="ru"> 
-<head> 
-    <meta charset="UTF-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>ProTrader Elite</title> 
-    <link rel="stylesheet" href="assets/css/style.css"> 
-</head> 
-<body> 
-    <nav class="navbar"> 
-        <div class="container"> 
-            <h2>ProTrader Elite</h2> 
-            <div class="user-menu"> 
-                <a href="login.html" class="btn">Войти</a> 
-                <a href="register.html" class="btn">Регистрация</a> 
-            </div> 
-        </div> 
-    </nav> 
-    <section class="hero"> 
-        <h1>Добро пожаловать!</h1> 
-        <p>Торговая платформа готова к работе</p> 
-    </section> 
-</body> 
-</html> 
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет - ProTrader Elite</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h2>ProTrader Elite</h2>
+            </div>
+            <div class="user-menu">
+                <a href="index.html" class="btn">Главная</a>
+                <a href="trading.html" class="btn">Торговля</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="dashboard-content">
+        <div class="container">
+            <h1>Личный кабинет</h1>
+            <p id="welcomeMessage">Загрузка...</p>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>Баланс</h3>
+                    <p id="userBalance">$0.00</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Активные сделки</h3>
+                    <p>0</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Общая прибыль</h3>
+                    <p style="color: #4caf50;">+$0.00</p>
+                </div>
+            </div>
+            
+            <div style="margin-top: 2rem;">
+                <a href="trading.html" class="cta-button">Начать торговать</a>
+                <a href="index.html" class="cta-button secondary">На главную</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
