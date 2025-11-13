@@ -1,24 +1,52 @@
-<!DOCTYPE html> 
-<html lang="ru"> 
-<head> 
-    <meta charset="UTF-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>ProTrader Elite</title> 
-    <link rel="stylesheet" href="assets/css/style.css"> 
-</head> 
-<body> 
-    <nav class="navbar"> 
-        <div class="container"> 
-            <h2>ProTrader Elite</h2> 
-            <div class="user-menu"> 
-                <a href="login.html" class="btn">Войти</a> 
-                <a href="register.html" class="btn">Регистрация</a> 
-            </div> 
-        </div> 
-    </nav> 
-    <section class="hero"> 
-        <h1>Добро пожаловать!</h1> 
-        <p>Торговая платформа готова к работе</p> 
-    </section> 
-</body> 
-</html> 
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация - ProTrader Elite</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h2>ProTrader Elite</h2>
+            </div>
+            <div class="user-menu">
+                <a href="index.html" class="btn">На главную</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="auth-container">
+        <div class="auth-form">
+            <h2 style="text-align: center; margin-bottom: 2rem; color: #1a237e;">Регистрация</h2>
+            
+            <form id="registerForm">
+                <div class="form-group">
+                    <label>Имя</label>
+                    <input type="text" id="registerName" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" id="registerEmail" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Пароль</label>
+                    <input type="password" id="registerPassword" required>
+                </div>
+                
+                <button type="submit" class="cta-button" style="width: 100%;">Зарегистрироваться</button>
+            </form>
+            
+            <p style="text-align: center; margin-top: 1.5rem;">
+                Уже есть аккаунт? <a href="login.html">Войти</a>
+            </p>
+        </div>
+    </div>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
